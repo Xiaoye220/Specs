@@ -39,10 +39,10 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
 
   
-  s.public_header_files = 'CocoaPodsTest.framework/Versions/A/**/*.h'
+  # s.public_header_files = 'CocoaPodsTest.framework/Versions/A/**/*.h'
     # s.source_files = 'CocoaPodsTest/Classes/**/*'
-  s.source_files = 'CocoaPodsTest.framework/Versions/A/**/*.h'
-  s.preserve_paths = 'CocoaPodsTest.framework'
+  # s.source_files = 'CocoaPodsTest.framework/Versions/A/**/*.h'
+  # s.preserve_paths = 'CocoaPodsTest.framework'
   s.vendored_frameworks = 'CocoaPodsTest.framework'
 
   s.dependency 'AFNetworking'
