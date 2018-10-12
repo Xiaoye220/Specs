@@ -37,16 +37,22 @@ TODO: Add long description of the pod here.
   s.subspec 'Base' do |sp|
      # sp.source_files = 'OMTSocial/Classes/*', 'OMTSocial/Classes/Base/*'
      sp.ios.vendored_frameworks = 'OMTSocial-0.0.1/ios/OMTSocial.framework'
+     sp.public_header_files = 'OMTSocial-0.0.1/ios/OMTSocial.framework/Versions/A/**/*.h'
+     sp.source_files = 'OMTSocial-0.0.1/ios/OMTSocial.framework/Versions/A/**/*.h'
+     sp.preserve_paths = 'OMTSocial-0.0.1/ios/OMTSocial.framework'
 
      sp.dependency 'OMTFoundation'
   end
 
-  # s.subspec 'Facebook' do |sp|
-  #    # sp.source_files = 'OMTSocial/Classes/Facebook/*'
-  #    sp.ios.vendored_frameworks = 'OMTSocialFacebook-0.0.1/ios/OMTSocialFacebook.framework'
+  s.subspec 'Facebook' do |sp|
+     # sp.source_files = 'OMTSocial/Classes/Facebook/*'
+     sp.ios.vendored_frameworks = 'OMTSocialFacebook-0.0.1/ios/OMTSocialFacebook.framework'
+     sp.public_header_files = 'OMTSocialFacebook-0.0.1/ios/OMTSocialFacebook.framework/Versions/A/**/*.h'
+     sp.source_files = 'OMTSocialFacebook-0.0.1/ios/OMTSocialFacebook.framework/Versions/A/**/*.h'
+     sp.preserve_paths = 'OMTSocialFacebook-0.0.1/ios/OMTSocialFacebook.framework'
 
-  #    sp.dependency 'OMTSocial/Base'
-  # end
+     sp.dependency 'OMTSocial/Base'
+  end
 
   # s.subspec 'Twitter' do |sp|
   #    # sp.source_files = 'OMTSocial/Classes/Twitter/*'
